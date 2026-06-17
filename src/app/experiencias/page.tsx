@@ -87,7 +87,7 @@ export default function ExperienciasPage() {
             Más que pedalear
           </p>
           <h1
-            className="text-cream font-title font-bold text-6xl md:text-7xl uppercase mb-6"
+            className="text-cream font-title font-bold text-5xl sm:text-6xl md:text-7xl uppercase mb-6"
             style={{ fontFamily: "var(--font-title)" }}
           >
             Experiencias

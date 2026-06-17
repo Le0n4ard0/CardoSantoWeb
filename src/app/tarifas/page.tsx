@@ -92,7 +92,7 @@ export default function TarifasPage() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lime font-medium uppercase tracking-widest text-sm mb-3">Precios</p>
           <h1
-            className="text-cream font-title font-bold text-6xl md:text-7xl uppercase mb-6"
+            className="text-cream font-title font-bold text-5xl sm:text-6xl md:text-7xl uppercase mb-6"
             style={{ fontFamily: "var(--font-title)" }}
           >
             Tarifas & Reservas

@@ -36,15 +36,15 @@ export default function Navbar() {
             <Image
               src="/img/cardo_white.png"
               alt="Cardo Santo Bike Ranch"
-              width={40}
-              height={40}
+              width={60}
+              height={60}
               className="object-contain"
             />
             <span
               className="text-cream font-title font-bold text-xl tracking-wide hidden sm:block"
               style={{ fontFamily: "var(--font-title)" }}
             >
-              CARDO SANTO
+              
             </span>
           </Link>
 
@@ -70,7 +70,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-cream p-2"
+            className="lg:hidden text-cream p-3 -mr-1 touch-manipulation"
             aria-label="Abrir menú"
           >
             <div className="w-6 flex flex-col gap-1.5">

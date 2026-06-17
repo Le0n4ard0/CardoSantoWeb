@@ -35,16 +35,24 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center bg-pine overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="/img/acampar.jpg"
+          alt="Cardo Santo Bike Ranch - campamento en el bosque"
+          fill
+          className="object-cover"
+          priority
+        />
         {/* Background overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-pine/60 via-pine/40 to-pine/90 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-pine/70 via-pine/50 to-pine/90 z-10" />
 
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
           <div className="flex justify-center mb-6">
             <Image
               src="/img/cardo_white.png"
               alt="Cardo Santo Bike Ranch"
-              width={100}
-              height={100}
+              width={320}
+              height={320}
               className="object-contain drop-shadow-2xl"
             />
           </div>
@@ -54,7 +62,7 @@ export default function Home() {
           </p>
 
           <h1
-            className="text-cream font-title font-bold text-6xl sm:text-7xl md:text-8xl leading-none mb-6 uppercase"
+            className="text-cream font-title font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-none mb-6 uppercase"
             style={{ fontFamily: "var(--font-title)" }}
           >
             El mejor bike park del
@@ -70,13 +78,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/tarifas"
-              className="bg-lime text-pine px-8 py-4 rounded font-bold text-lg uppercase tracking-wider hover:bg-lime-dark transition-colors"
+              className="bg-lime text-pine px-8 py-4 rounded font-bold text-base sm:text-lg uppercase tracking-wider hover:bg-lime-dark transition-colors touch-manipulation"
             >
               Comprar día · $300 MXN
             </Link>
             <Link
               href="/trails"
-              className="border-2 border-cream text-cream px-8 py-4 rounded font-bold text-lg uppercase tracking-wider hover:bg-cream hover:text-pine transition-colors"
+              className="border-2 border-cream text-cream px-8 py-4 rounded font-bold text-base sm:text-lg uppercase tracking-wider hover:bg-cream hover:text-pine transition-colors touch-manipulation"
             >
               Ver trails
             </Link>
@@ -257,6 +265,22 @@ export default function Home() {
               Reservar campamento
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* RESEÑAS GOOGLE */}
+      <section className="py-16 bg-cream">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <p className="text-lime font-medium uppercase tracking-widest text-sm mb-2">Opiniones</p>
+            <h2
+              className="text-pine font-title font-bold text-4xl md:text-5xl uppercase"
+              style={{ fontFamily: "var(--font-title)" }}
+            >
+              Lo que dicen los riders
+            </h2>
+          </div>
+          <div className="elfsight-app-46f77728-5a87-40d5-b5f8-c03e5a2bd0a3" data-elfsight-app-lazy="" />
         </div>
       </section>
 

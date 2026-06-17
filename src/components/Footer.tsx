@@ -27,8 +27,8 @@ export default function Footer() {
               <Image
                 src="/img/cardo_white.png"
                 alt="Cardo Santo Bike Ranch"
-                width={48}
-                height={48}
+                width={60}
+                height={60}
                 className="object-contain"
               />
               <div>

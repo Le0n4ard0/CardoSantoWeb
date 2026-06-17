@@ -3,7 +3,8 @@
     "allow": [
       "PowerShell(node -v)",
       "PowerShell(npm -v)",
-      "PowerShell(Copy-Item -Path \"c:\\\\xampp\\\\htdocs\\\\CardoSantoWeb\\\\img\" -Destination \"c:\\\\xampp\\\\htdocs\\\\CardoSantoWeb\\\\public\\\\img\" -Recurse)"
+      "PowerShell(Copy-Item -Path \"c:\\\\xampp\\\\htdocs\\\\CardoSantoWeb\\\\img\" -Destination \"c:\\\\xampp\\\\htdocs\\\\CardoSantoWeb\\\\public\\\\img\" -Recurse)",
+      "WebSearch"
     ]
   }
 }
