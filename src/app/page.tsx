@@ -2,9 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const scheduleItems = [
-  { days: "Lun – Jue", hours: "7:00 am – 2:00 pm" },
-  { days: "Viernes", hours: "7:00 am – 7:00 pm" },
-  { days: "Sáb – Dom", hours: "7:00 am – 6:00 pm" },
+  { days: "Lunes a Domingo", hours: "6:00 am – 8:00 pm" },
 ];
 
 const highlights = [

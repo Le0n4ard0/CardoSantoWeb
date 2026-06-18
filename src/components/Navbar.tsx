@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/galeria", label: "Galería" },
   { href: "/tarifas", label: "Tarifas" },
   { href: "/como-llegar", label: "Cómo Llegar" },
+  { href: "/reglamento", label: "Reglamento" },
 ];
 
 export default function Navbar() {

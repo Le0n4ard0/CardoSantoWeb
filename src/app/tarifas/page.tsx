@@ -1,13 +1,13 @@
+import Image from "next/image";
+
 const schedule = [
-  { days: "Lunes – Jueves", hours: "7:00 am – 2:00 pm", icon: "🌤️" },
-  { days: "Viernes", hours: "7:00 am – 7:00 pm", icon: "🌅" },
-  { days: "Sábado – Domingo", hours: "7:00 am – 6:00 pm", icon: "☀️" },
+  { days: "Lunes a Domingo", hours: "6:00 am – 8:00 pm", icon: "☀️" },
 ];
 
 const pricingPlans = [
   {
     id: "dia",
-    name: "Día de Parque",
+    name: "Biker",
     price: "$300",
     currency: "MXN",
     period: "por persona / día",
@@ -22,18 +22,33 @@ const pricingPlans = [
     highlight: true,
   },
   {
-    id: "campamento",
-    name: "Campamento",
-    price: "Cotizar",
-    currency: "",
-    period: "por noche / persona",
-    desc: "Pasa la noche en el bosque y pedalea desde el amanecer. Consulta disponibilidad y precio.",
+    id: "acompanante",
+    name: "Acompañante",
+    price: "$50",
+    currency: "MXN",
+    period: "por persona / día",
+    desc: "Para quienes vienen a acompañar sin usar las pistas. Acceso a las instalaciones generales.",
     features: [
-      "Área de campamento en el bosque",
+      "Acceso a instalaciones del parque",
+      "Área de descanso y restaurante",
+      "Estacionamiento gratuito",
+    ],
+    cta: "Más información",
+    highlight: false,
+  },
+  {
+    id: "glamping",
+    name: "Glamping",
+    price: "$200",
+    currency: "MXN",
+    period: "por persona / noche",
+    desc: "Pasa la noche en el bosque y pedalea desde el amanecer. Cupo limitado.",
+    features: [
+      "Área de glamping en el bosque",
       "Uso de baños y sanitarios",
-      "Entrada al parque del siguiente día",
       "Fogata en área designada",
-      "Cupo limitado",
+      "Experiencia completa en la naturaleza",
+      "Cupo limitado — reservar con anticipación",
     ],
     cta: "Solicitar reserva",
     highlight: false,
@@ -49,7 +64,7 @@ const pricingPlans = [
       "Precio preferencial por persona",
       "Guía de trails incluido",
       "Área privada en restaurante",
-      "Opción de campamento grupal",
+      "Opción de glamping grupal",
       "Personalización del evento",
     ],
     cta: "Solicitar cotización",
@@ -88,8 +103,16 @@ export default function TarifasPage() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-pine pt-32 pb-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative bg-pine pt-32 pb-20 px-4 overflow-hidden">
+        <Image
+          src="/img/acampar.jpg"
+          alt="Cardo Santo Bike Ranch - campamento en el bosque"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-pine/75" />
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
           <p className="text-lime font-medium uppercase tracking-widest text-sm mb-3">Precios</p>
           <h1
             className="text-cream font-title font-bold text-5xl sm:text-6xl md:text-7xl uppercase mb-6"
@@ -113,7 +136,7 @@ export default function TarifasPage() {
           >
             Horarios de Operación
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="flex justify-center">
             {schedule.map((s) => (
               <div key={s.days} className="bg-pine rounded-lg p-6 text-center">
                 <span className="text-3xl block mb-2">{s.icon}</span>
@@ -137,7 +160,7 @@ export default function TarifasPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {pricingPlans.map((plan) => (
               <div
                 key={plan.id}

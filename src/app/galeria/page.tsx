@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function GaleriaPage() {
   const instagramPosts = [
     { id: 1, alt: "Trail en el bosque de La Marquesa" },
@@ -14,8 +16,16 @@ export default function GaleriaPage() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-pine pt-32 pb-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative bg-pine pt-32 pb-20 px-4 overflow-hidden">
+        <Image
+          src="/img/acampar.jpg"
+          alt="Cardo Santo Bike Ranch - campamento en el bosque"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-pine/75" />
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
           <p className="text-lime font-medium uppercase tracking-widest text-sm mb-3">
             En imágenes
           </p>

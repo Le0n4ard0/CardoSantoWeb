@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const facilities = [
   {
@@ -44,8 +45,16 @@ export default function InstalacionesPage() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-pine pt-32 pb-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative bg-pine pt-32 pb-20 px-4 overflow-hidden">
+        <Image
+          src="/img/acampar.jpg"
+          alt="Cardo Santo Bike Ranch - campamento en el bosque"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-pine/75" />
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
           <p className="text-lime font-medium uppercase tracking-widest text-sm mb-3">El parque</p>
           <h1
             className="text-cream font-title font-bold text-5xl sm:text-6xl md:text-7xl uppercase mb-6"

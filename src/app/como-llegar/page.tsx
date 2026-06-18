@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const directions = [
   {
     from: "Desde CDMX (Toluca / Las Américas)",
@@ -36,8 +38,16 @@ export default function ComoLlegarPage() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-pine pt-32 pb-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative bg-pine pt-32 pb-20 px-4 overflow-hidden">
+        <Image
+          src="/img/acampar.jpg"
+          alt="Cardo Santo Bike Ranch - campamento en el bosque"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-pine/75" />
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
           <p className="text-lime font-medium uppercase tracking-widest text-sm mb-3">Ubicación</p>
           <h1
             className="text-cream font-title font-bold text-5xl sm:text-6xl md:text-7xl uppercase mb-6"
@@ -46,7 +56,7 @@ export default function ComoLlegarPage() {
             Cómo Llegar
           </h1>
           <p className="text-cream/70 text-lg leading-relaxed max-w-2xl mx-auto">
-            Estamos en el Bosque de La Marquesa, entre CDMX y Toluca. A menos de una hora desde el
+            Estamos en el Bosque de San Pedro Atlapulco, entre CDMX y Toluca. A menos de una hora desde el
             centro de la Ciudad de México.
           </p>
         </div>
@@ -56,7 +66,7 @@ export default function ComoLlegarPage() {
       <section className="bg-pine-light">
         <div className="w-full h-72 md:h-96 lg:h-[480px]">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.0!2d-99.56!3d19.28!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDE2JzQ4LjAiTiA5OcKwMzMnMzYuMCJX!5e0!3m2!1ses!2smx!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4217.841221467806!2d-99.37401242432615!3d19.254937481986808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdf7e7a0910fed%3A0x148bd2de4c6b8f10!2sCardo%20Santo%20Bike%20Ranch!5e1!3m2!1ses-419!2smx!4v1781806263349!5m2!1ses-419!2smx"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -75,7 +85,7 @@ export default function ComoLlegarPage() {
             <div className="text-center">
               <span className="text-3xl block mb-2">📍</span>
               <p className="font-bold text-sm uppercase tracking-wider">Ubicación</p>
-              <p className="text-sm mt-1">La Marquesa, Lerma, Edo. Méx.</p>
+              <p className="text-sm mt-1">San Pedro Atlapulco, Edo. Méx.</p>
             </div>
             <div className="text-center">
               <span className="text-3xl block mb-2">🚗</span>

@@ -8,12 +8,11 @@ const quickLinks = [
   { href: "/galeria", label: "Galería" },
   { href: "/tarifas", label: "Tarifas & Reservas" },
   { href: "/como-llegar", label: "Cómo Llegar" },
+  { href: "/reglamento", label: "Reglamento" },
 ];
 
 const schedule = [
-  { days: "Lun – Jue", hours: "7:00 am – 2:00 pm" },
-  { days: "Viernes", hours: "7:00 am – 7:00 pm" },
-  { days: "Sáb – Dom", hours: "7:00 am – 6:00 pm" },
+  { days: "Lunes a Domingo", hours: "6:00 am – 8:00 pm" },
 ];
 
 export default function Footer() {
@@ -42,7 +41,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-cream/70 text-sm leading-relaxed">
-              El mejor bike park del Estado de México, en el corazón del Bosque de La Marquesa.
+              El mejor bike park del Estado de México, en el corazón del Bosque de La Marquesa (San Pedro Atlapulco).
             </p>
             <div className="flex gap-3 mt-4">
               <a
@@ -109,7 +108,7 @@ export default function Footer() {
               Ubicación
             </h3>
             <p className="text-cream/70 text-sm leading-relaxed mb-3">
-              Bosque La Marquesa, Lerma, Estado de México
+              San Pedro Atlapulco, Estado de México
             </p>
             <p className="text-cream/70 text-sm mb-4">
               Entrada: <span className="text-lime font-bold">$300 MXN</span> por día
