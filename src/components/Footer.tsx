@@ -21,8 +21,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
-          <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-4">
+          <div className="lg:col-span-1 text-center md:text-left">
+            <Link href="/" className="flex items-center gap-3 mb-4 justify-center md:justify-start">
               <Image
                 src="/img/cardo_white.png"
                 alt="Cardo Santo Bike Ranch"
@@ -43,7 +43,7 @@ export default function Footer() {
             <p className="text-cream/70 text-sm leading-relaxed">
               Uno de los mejores bike parks del Estado de México, en el corazón del Bosque de La Marquesa (San Pedro Atlapulco).
             </p>
-            <div className="flex gap-3 mt-4">
+            <div className="flex gap-3 mt-4 justify-center md:justify-start">
               <a
                 href="https://www.instagram.com/cardosantobikeranch/"
                 target="_blank"
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
 
           {/* Quick links */}
-          <div>
+          <div className="text-center md:text-left">
             <h3
               className="font-title font-bold text-lg text-lime mb-4 uppercase tracking-wider"
               style={{ fontFamily: "var(--font-title)" }}
@@ -81,7 +81,7 @@ export default function Footer() {
           </div>
 
           {/* Schedule */}
-          <div>
+          <div className="text-center md:text-left">
             <h3
               className="font-title font-bold text-lg text-lime mb-4 uppercase tracking-wider"
               style={{ fontFamily: "var(--font-title)" }}
@@ -100,7 +100,7 @@ export default function Footer() {
           </div>
 
           {/* Location */}
-          <div>
+          <div className="text-center md:text-left">
             <h3
               className="font-title font-bold text-lg text-lime mb-4 uppercase tracking-wider"
               style={{ fontFamily: "var(--font-title)" }}
