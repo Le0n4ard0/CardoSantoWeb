@@ -63,14 +63,14 @@ export default function Home() {
             className="text-cream font-title font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-none mb-6 uppercase"
             style={{ fontFamily: "var(--font-title)" }}
           >
-            El mejor bike park del
+            Uno de los mejores bike parks del
             <br />
             <span className="text-lime">Estado de México</span>
           </h1>
 
           <p className="text-cream/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
             Trails para todos los niveles, líneas de saltos, restaurante y campamento en el corazón
-            del bosque. Abierto desde 2023.
+            del bosque. <br />Abierto desde 2023.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

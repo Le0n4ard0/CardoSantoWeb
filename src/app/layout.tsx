@@ -27,11 +27,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Cardo Santo Bike Ranch",
   description:
-    "El mejor bike park del Estado de México. Trails para todos los niveles, restaurante y área de campamento en La Marquesa. Abierto desde 2023.",
+    "Uno de los mejores bike parks del Estado de México. Trails para todos los niveles, restaurante y área de campamento en La Marquesa. Abierto desde 2023.",
   keywords: ["bike park", "mountain bike", "MTB", "La Marquesa", "Estado de México", "trails", "cardo santo"],
   openGraph: {
     title: "Cardo Santo Bike Ranch",
-    description: "El mejor bike park del Estado de México",
+    description: "Uno de los mejores bike parks del Estado de México",
     type: "website",
   },
 };

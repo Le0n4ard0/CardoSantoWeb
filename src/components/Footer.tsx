@@ -41,7 +41,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-cream/70 text-sm leading-relaxed">
-              El mejor bike park del Estado de México, en el corazón del Bosque de La Marquesa (San Pedro Atlapulco).
+              Uno de los mejores bike parks del Estado de México, en el corazón del Bosque de La Marquesa (San Pedro Atlapulco).
             </p>
             <div className="flex gap-3 mt-4">
               <a
