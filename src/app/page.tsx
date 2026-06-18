@@ -56,7 +56,7 @@ export default function Home() {
           </div>
 
           <p className="text-lime font-medium uppercase tracking-widest text-sm mb-3">
-            La Marquesa · Estado de México
+            San Pedro Atlapulco · Estado de México
           </p>
 
           <h1

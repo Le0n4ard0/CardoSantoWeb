@@ -126,7 +126,7 @@ export default function Footer() {
           <p className="text-cream/40 text-xs">
             © {new Date().getFullYear()} Cardo Santo Bike Ranch. Todos los derechos reservados.
           </p>
-          <p className="text-cream/40 text-xs">Familia Saldaña · La Marquesa, Edo. Méx.</p>
+          <p className="text-cream/40 text-xs">Familia Saldaña · San Pedro Atlapulco, Edo. Méx.</p>
         </div>
       </div>
     </footer>
